@@ -21,8 +21,9 @@ const {
   PHONE_NUMBER_ID,
   WA_ACCESS_TOKEN,
   WEBHOOK_VERIFY_TOKEN,
-  PORT = 8080,
 } = process.env;
+
+const PORT = process.env.PORT || 8080;
 
 const WA_API_URL = `https://graph.facebook.com/v19.0/${PHONE_NUMBER_ID}/messages`;
 
